@@ -3,12 +3,12 @@
 {% block ContenidoQueCambia %}
 <h1>Crear Usuario</h1>
 <body>
-    <form action-"{% url "registro" %}" method="POST">
+    <form action="{% url "registro" %}" method="POST">
         {% csrf_token %}
 
         {{form.as_p}}
 
-        <buttonm type=""submit"> Registrate</buttonm>
+        <buttom type="submit"> Registrate</buttonm>
 
     </form>
     
