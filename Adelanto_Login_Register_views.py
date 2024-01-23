@@ -33,7 +33,7 @@ def register(request):
     if request.method == "POST":
         form =  UserCreationForm()
         if form.is_valid():
-            username = form.cleaned_data["username"]
+            username = form.cleaned_data("username")
             form.save()
             return render(request,"miapp/inicio.html" , {"mensaje":"Usuario Creado:)" })
         
